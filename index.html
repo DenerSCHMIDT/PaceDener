@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Treinamento 3:50/km - Treino Progressivo</title>
+    <meta name="description" content="Plano de treinamento progressivo para corredores que desejam atingir 3:50/km com consistência e técnica.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h1 class="logo-text">Treino 3:50</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#fase1" class="nav-link">Fase 1 - Adaptação</a>
+                    <a href="#fase2" class="nav-link">Fase 2 - Construção</a>
+                    <a href="#fase3" class="nav-link">Fase 3 - Intensificação</a>
+                    <a href="#fase4" class="nav-link">Fase 4 - Pico</a>
+                </nav>
+
+                <!-- Controls -->
+                <div class="header-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                        <svg class="menu-icon hamburger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                        <svg class="menu-icon close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <a href="#fase1" class="nav-link">Fase 1 - Adaptação</a>
+                <a href="#fase2" class="nav-link">Fase 2 - Construção</a>
+                <a href="#fase3" class="nav-link">Fase 3 - Intensificação</a>
+                <a href="#fase4" class="nav-link">Fase 4 - Pico</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Fase 1 -->
+            <section id="fase1" class="phase-section">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Fase 1 - Adaptação</h2>
+                        <p class="phase-objective">Aumentar volume, reintroduzir tiros e ajustar passada</p>
+                    </div>
+
+                    <div class="phase-goals">
+                        <div class="goal-card">
+                            <div class="goal-header">
+                                <svg class="goal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <h3>Meta da Fase</h3>
+                            </div>
+                            <p>Correr 3 km em 4:30/km de forma confortável</p>
+                        </div>
+
+                        <div class="test-card">
+                            <div class="test-header">
+                                <svg class="test-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <h3>Teste Final</h3>
+                            </div>
+                            <p>Teste final: 3 km no ritmo mais forte que conseguir manter. Meta: sub 13:30 (4:30/km)</p>
+                            <div class="test-form">
+                                <input type="text" placeholder="Ex: 12:30" class="test-input">
+                                <button class="test-button">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="training-table" id="table-fase1">
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Dia</th>
+                                    <th>Tipo de Treino</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dados serão inseridos via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fase 2 -->
+            <section id="fase2" class="phase-section">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Fase 2 - Construção de Ritmo</h2>
+                        <p class="phase-objective">Consolidar ritmo em torno de 4:15/km e aumentar resistência</p>
+                    </div>
+
+                    <div class="phase-goals">
+                        <div class="goal-card">
+                            <div class="goal-header">
+                                <svg class="goal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <h3>Meta da Fase</h3>
+                            </div>
+                            <p>Correr 3 km em 4:15/km de forma consistente</p>
+                        </div>
+
+                        <div class="test-card">
+                            <div class="test-header">
+                                <svg class="test-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <h3>Teste Final</h3>
+                            </div>
+                            <p>Teste final: 3 km buscando ritmo constante. Meta: sub 12:45 (4:15/km)</p>
+                            <div class="test-form">
+                                <input type="text" placeholder="Ex: 12:30" class="test-input">
+                                <button class="test-button">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="training-table" id="table-fase2">
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Dia</th>
+                                    <th>Tipo de Treino</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dados serão inseridos via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fase 3 -->
+            <section id="fase3" class="phase-section">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Fase 3 - Intensificação</h2>
+                        <p class="phase-objective">Correr treinos abaixo de 4:00/km com mais constância</p>
+                    </div>
+
+                    <div class="phase-goals">
+                        <div class="goal-card">
+                            <div class="goal-header">
+                                <svg class="goal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <h3>Meta da Fase</h3>
+                            </div>
+                            <p>Correr 3 km em 4:00/km com controle</p>
+                        </div>
+
+                        <div class="test-card">
+                            <div class="test-header">
+                                <svg class="test-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <h3>Teste Final</h3>
+                            </div>
+                            <p>Teste final: 3 km em ritmo forte controlado. Meta: sub 12:00 (4:00/km)</p>
+                            <div class="test-form">
+                                <input type="text" placeholder="Ex: 12:30" class="test-input">
+                                <button class="test-button">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="training-table" id="table-fase3">
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Dia</th>
+                                    <th>Tipo de Treino</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dados serão inseridos via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fase 4 -->
+            <section id="fase4" class="phase-section">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Fase 4 - Pico de Desempenho</h2>
+                        <p class="phase-objective">Executar treinos em ritmo de prova (3:50/km) com eficiência</p>
+                    </div>
+
+                    <div class="phase-goals">
+                        <div class="goal-card">
+                            <div class="goal-header">
+                                <svg class="goal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                                <h3>Meta da Fase</h3>
+                            </div>
+                            <p>Correr 3 km em 3:50/km de forma eficiente</p>
+                        </div>
+
+                        <div class="test-card">
+                            <div class="test-header">
+                                <svg class="test-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <h3>Teste Final</h3>
+                            </div>
+                            <p>Teste final: 3 km para tempo máximo. Meta: sub 11:30 (3:50/km)</p>
+                            <div class="test-form">
+                                <input type="text" placeholder="Ex: 12:30" class="test-input">
+                                <button class="test-button">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="training-table" id="table-fase4">
+                            <thead>
+                                <tr>
+                                    <th>Semana</th>
+                                    <th>Dia</th>
+                                    <th>Tipo de Treino</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dados serão inseridos via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Plano de Treinamento 3:50/km. Desenvolvido para atletas dedicados.</p>
+                <p>🏃‍♂️ Foque na consistência, técnica e progressão gradual para alcançar seus objetivos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Detalhes do Treino</h3>
+                <button id="modal-close" class="modal-close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <span id="modal-day"></span>
+                    <span class="modal-separator">•</span>
+                    <span id="modal-description"></span>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-intensity">
+                        <svg class="intensity-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                        </svg>
+                        <span id="modal-intensity-label"></span>
+                    </div>
+                    <div class="modal-duration">
+                        <svg class="duration-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        <span id="modal-duration"></span>
+                    </div>
+                </div>
+                <div class="modal-detail-text">
+                    <h4>Detalhes do Treino</h4>
+                    <p id="modal-detail"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="modal-ok" class="modal-button">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
